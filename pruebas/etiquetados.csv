@@ -1,61 +1,61 @@
-descripcion,categoria
-empanadas,Alimentación
-almuerzo corrientazo,Alimentación
-jugo de naranja,Alimentación
-pasaje a casa,Transporte
-taxi al centro,Transporte
-gasolina moto,Transporte
-bolsas para los productos,Mercancía
-compra de inventario,Mercancía
-arepas para vender,Mercancía
-zapatos,Otros
-recarga de celular,Otros
-pago de multa,Otros
-desayuno con tinto,Alimentación
-corrientazo,Alimentación
-gaseosa y pan,Alimentación
-almuerzo en la plaza,Alimentación
-cafe con leche,Alimentación
-mercado de la semana,Alimentación
-pollo asado para la casa,Alimentación
-comida de los niños,Alimentación
-hamburguesa,Alimentación
-helado,Alimentación
-agua y galletas,Alimentación
-tamal con chocolate,Alimentación
-pasaje bus,Transporte
-transmilenio,Transporte
-taxi,Transporte
-uber a la bodega,Transporte
-gasolina,Transporte
-parqueadero del centro,Transporte
-peaje,Transporte
-mototaxi,Transporte
-pasaje de ida y vuelta,Transporte
-recarga tarjeta tullave,Transporte
-bicitaxi,Transporte
-flete del carro,Transporte
-compra de mercancia,Mercancía
-inventario de gaseosas,Mercancía
-empanadas para vender,Mercancía
-bolsas y servilletas,Mercancía
-proveedor de arepas,Mercancía
-insumos,Mercancía
-harina y aceite para la fritura,Mercancía
-pollo para vender,Mercancía
-jugos para vender,Mercancía
-materia prima,Mercancía
-dulces para revender,Mercancía
-cajas de huevos para el puesto,Mercancía
-cine,Otros
-medicinas,Otros
-regalo de cumpleanos,Otros
-peluqueria,Otros
-pago de internet,Otros
-ropa,Otros
-utiles escolares,Otros
-cuota del prestamo,Otros
-donacion a la iglesia,Otros
-arreglo del celular,Otros
-plan de datos,Otros
-ayuda a mi mama,Otros
+descripcion,categoria,categoria_4
+empanadas,Comidas fuera de casa,Alimentación
+almuerzo corrientazo,Comidas fuera de casa,Alimentación
+jugo de naranja,Comidas fuera de casa,Alimentación
+pasaje a casa,Transporte,Transporte
+taxi al centro,Transporte,Transporte
+gasolina moto,Transporte,Transporte
+bolsas para los productos,Otros gastos del negocio,Mercancía
+compra de inventario,Mercancía e insumos,Mercancía
+arepas para vender,Mercancía e insumos,Mercancía
+zapatos,"Personal, hogar y ocio",Otros
+recarga de celular,Vivienda y servicios,Otros
+pago de multa,Otros,Otros
+desayuno con tinto,Comidas fuera de casa,Alimentación
+corrientazo,Comidas fuera de casa,Alimentación
+gaseosa y pan,Comidas fuera de casa,Alimentación
+almuerzo en la plaza,Comidas fuera de casa,Alimentación
+cafe con leche,Comidas fuera de casa,Alimentación
+mercado de la semana,Alimentación en casa,Alimentación
+pollo asado para la casa,Alimentación en casa,Alimentación
+comida de los niños,Alimentación en casa,Alimentación
+hamburguesa,Comidas fuera de casa,Alimentación
+helado,Comidas fuera de casa,Alimentación
+agua y galletas,Comidas fuera de casa,Alimentación
+tamal con chocolate,Comidas fuera de casa,Alimentación
+pasaje bus,Transporte,Transporte
+transmilenio,Transporte,Transporte
+taxi,Transporte,Transporte
+uber a la bodega,Transporte,Transporte
+gasolina,Transporte,Transporte
+parqueadero del centro,Transporte,Transporte
+peaje,Transporte,Transporte
+mototaxi,Transporte,Transporte
+pasaje de ida y vuelta,Transporte,Transporte
+recarga tarjeta tullave,Transporte,Transporte
+bicitaxi,Transporte,Transporte
+flete del carro,Otros gastos del negocio,Transporte
+compra de mercancia,Mercancía e insumos,Mercancía
+inventario de gaseosas,Mercancía e insumos,Mercancía
+empanadas para vender,Mercancía e insumos,Mercancía
+bolsas y servilletas,Otros gastos del negocio,Mercancía
+proveedor de arepas,Mercancía e insumos,Mercancía
+insumos,Mercancía e insumos,Mercancía
+harina y aceite para la fritura,Mercancía e insumos,Mercancía
+pollo para vender,Mercancía e insumos,Mercancía
+jugos para vender,Mercancía e insumos,Mercancía
+materia prima,Mercancía e insumos,Mercancía
+dulces para revender,Mercancía e insumos,Mercancía
+cajas de huevos para el puesto,Mercancía e insumos,Mercancía
+cine,"Personal, hogar y ocio",Otros
+medicinas,Salud,Otros
+regalo de cumpleanos,Otros,Otros
+peluqueria,"Personal, hogar y ocio",Otros
+pago de internet,Vivienda y servicios,Otros
+ropa,"Personal, hogar y ocio",Otros
+utiles escolares,Educación,Otros
+cuota del prestamo,Deudas y créditos,Otros
+donacion a la iglesia,Otros,Otros
+arreglo del celular,"Personal, hogar y ocio",Otros
+plan de datos,Vivienda y servicios,Otros
+ayuda a mi mama,Otros,Otros
