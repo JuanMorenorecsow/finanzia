@@ -6,9 +6,10 @@
     {"nombre": "Servicios", "monto": 150000}
   ],
   "topes": {
-    "Alimentación": 400000,
+    "Alimentación en casa": 250000,
+    "Comidas fuera de casa": 150000,
     "Transporte": 200000,
-    "Mercancía": 300000,
+    "Mercancía e insumos": 300000,
     "Otros": 100000
   },
   "meta_ahorro_mensual": 150000
