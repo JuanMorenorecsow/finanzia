@@ -1,9 +1,12 @@
 from agente.correcciones import buscar_correccion
+from agente.knn import modelo
 
-# Las 11 categorías del documento (sección 2). El orden importa: gana la primera categoría
-# que tenga una palabra clave en la descripción, por eso las de negocio van primero
-# ("pollo para vender" es mercancía, no comida). Las palabras salen de los ejemplos de
-# la definición de cada categoría, NUNCA del conjunto de evaluación (pruebas/etiquetados.csv).
+# Las 11 categorías del documento (sección 2).
+# Las palabras clave ya no deciden en la app: quedan como LÍNEA BASE para comparar con el KNN
+# (pruebas/evaluar.py). El orden importa: gana la primera categoría que tenga una palabra clave
+# en la descripción, por eso las de negocio van primero ("pollo para vender" es mercancía, no
+# comida). Las palabras salen de los ejemplos de la definición de cada categoría, NUNCA del
+# conjunto de evaluación (pruebas/etiquetados.csv).
 PALABRAS_CLAVE = {
     "Mercancía e insumos": ["para vender", "revender", "mercancía", "mercancia", "inventario", "proveedor",
                             "insumos", "materia prima", "surtido"],
@@ -35,11 +38,15 @@ def categorizar_por_reglas(descripcion):
 
 
 def categorizar(descripcion, correcciones):
-    """Primero mira las correcciones del usuario; si no hay una parecida, usa las reglas.
+    """Primero mira las correcciones del usuario; si no hay una parecida, decide el KNN.
 
-    Devuelve (categoria, origen), donde origen es "corrección" o "reglas".
+    Devuelve (categoria, origen), donde origen es:
+      "corrección"  el usuario ya había corregido una descripción igual o muy parecida
+      "knn"         votaron los ejemplos más parecidos del dataset
+      "duda"        ningún ejemplo se parece lo suficiente: es la mejor apuesta, pero hay que revisarla
     """
     categoria = buscar_correccion(descripcion, correcciones)
     if categoria:
         return categoria, "corrección"
-    return categorizar_por_reglas(descripcion), "reglas"
+    resultado = modelo().predecir(descripcion)
+    return resultado["categoria"], "duda" if resultado["duda"] else "knn"

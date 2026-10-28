@@ -159,9 +159,14 @@ with tab_gastos:
         if monto_gas > 0 and desc_gas.strip() != "":
             categoria, origen = categorizar(desc_gas.strip(), cargar_correcciones())
             guardar_movimiento("gasto", monto_gas, desc_gas.strip(), categoria)
-            fuente = "por una corrección tuya anterior" if origen == "corrección" else "por palabras clave"
-            st.session_state["aviso"] = (f"Gasto guardado. Categoría: {categoria} ({fuente}). "
-                                         "Si no es, corrígela más abajo.")
+            if origen == "duda":
+                st.session_state["aviso"] = (f"Gasto guardado. No estoy seguro de la categoría: lo puse en "
+                                             f"{categoria}, pero revísalo y corrígelo más abajo si no es.")
+            else:
+                fuente = ("por una corrección tuya anterior" if origen == "corrección"
+                          else "porque se parece a gastos que ya conozco")
+                st.session_state["aviso"] = (f"Gasto guardado. Categoría: {categoria} ({fuente}). "
+                                             "Si no es, corrígela más abajo.")
             st.rerun()
         else:
             st.warning("Escribe un monto mayor a 0 y una descripción.")
